@@ -6,7 +6,7 @@ import DataSetCard from '../components/ui/DataSetCard';
 import { Star } from 'lucide-react';
 
 const DataSets: React.FC = () => {
-  const { datasets, user, toggleFavoriteDataset, searchDatasets, filterDatasetsByCategory } = useApp();
+  const { datasets, user, toggleFavoriteDataset, searchDatasets } = useApp();
   const [filteredDatasets, setFilteredDatasets] = useState(datasets);
   const [selectedCategory, setSelectedCategory] = useState('Tümü');
   const [searchQuery, setSearchQuery] = useState('');

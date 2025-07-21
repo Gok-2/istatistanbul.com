@@ -1,9 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
-import Sidebar from './components/Sidebar';
-import Layout from './components/layout/Layout';
-import Home from './pages/Home';
+// Make sure Sidebar exists at the specified path or update the path accordingly
+// import Sidebar from './components/sidebar/Sidebar'; // Update this path if Sidebar is located elsewhere
+import Sidebar from './components/Sidebar'; // Adjusted path to match likely folder casing
+// import Home from './pages/Home'; // Original import
+import Home from './pages/Home'; // Updated import path if Home.tsx is in src/pages/Home/Home.tsx
 import DataSets from './pages/DataSets';
 import AIModels from './pages/AIModels';
 import DataPreprocessing from './pages/DataPreprocessing';
